@@ -1,0 +1,17 @@
+# Manuscript and response letter (tracked outside git)
+*.docx
+*.doc
+~$*
+
+# Generated analysis outputs
+outputs/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
