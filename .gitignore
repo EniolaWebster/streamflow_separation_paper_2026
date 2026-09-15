@@ -3,6 +3,9 @@
 *.doc
 ~$*
 
+# Internal cleanup summary for co-authors
+repo_cleanup_summary_*.txt
+
 # Generated analysis outputs
 outputs/
 
