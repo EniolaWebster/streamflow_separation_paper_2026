@@ -1,5 +1,7 @@
 # Streamflow Separation Paper — Data and Code
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22780129.svg)](https://doi.org/10.5281/zenodo.22780129)
+
 Input data, model parameters, and analysis scripts to reproduce the
 streamflow separation results reported in:
 
@@ -17,6 +19,17 @@ reference baseflow derived from the modified strict baseflow algorithm
 
 The PyBFS model code lives in its own repository; this repository holds only
 the data and scripts specific to the paper.
+
+## Citation
+
+This repository is archived on Zenodo. To cite the data and code:
+
+> Webster-Esho, E., Konrad, C. P., Talukdar, J., Aghababaei, A., Van der
+> Heijden, R., Li, X., Williams, G. P., Jones, N. L., Rizzo, D. M., & Clement,
+> T. P. (2026). *Data and analysis code for "Development and Testing of a
+> Process-Based Streamflow Separation Model for Baseflow Simulation and
+> Short-Term Low-Flow Forecasts"* (Version 1.0.0) [Data set]. Zenodo.
+> https://doi.org/10.5281/zenodo.22780129
 
 ## Quick start
 
