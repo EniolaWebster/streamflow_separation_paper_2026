@@ -1,16 +1,16 @@
 # Streamflow Separation Paper — Data and Code
 
 Input data, model parameters, and analysis scripts to reproduce the
-streamflow-partitioning results reported in:
+streamflow separation results reported in:
 
 > Webster-Esho, E., Konrad, C. P., Talukdar, J., Aghababaei, A., Van der
 > Heijden, R., Li, X., Williams, G. P., Jones, N. L., Rizzo, D. M., & Clement,
-> T. P. *Development and Testing of a Process-Based Streamflow Partitioning
-> Model for Baseflow Simulation and Short-Term Drought-Flow Forecasts.*
+> T. P. *Development and Testing of a Process-Based Streamflow Separation
+> Model for Baseflow Simulation and Short-Term Low-Flow Forecasts.*
 > (manuscript under review)
 
 The study applies [PyBFS](https://github.com/BYU-Hydroinformatics/pybfs) to 50
-unregulated USGS gauges across Alabama, Georgia, Florida, and Mississippi for
+unregulated USGS gauges across Alabama, Florida, Georgia, and Mississippi for
 the 2018 validation year, and compares the simulated baseflow to a "labeled"
 reference baseflow derived from the modified strict baseflow algorithm
 (Section 2.4 of the paper).
