@@ -2,7 +2,7 @@
 """
 Single entry point to reproduce the paper's streamflow-partitioning analysis:
 
-  1. Run PyBFS baseflow separation for all 50 sites over the 2018 validation
+  1. Run PyBFS baseflow separation for all 50 sites over the 2018 evaluation
      year (main_baseflow_2018_all_sites.py) -> baseflow_only_2018_all_sites_copy.csv
   2. Score PyBFS against the modified strict baseflow reference for all sites
      (compute_baseflow_skill_all_sites.py) -> nrmse_summary_all_sites.csv

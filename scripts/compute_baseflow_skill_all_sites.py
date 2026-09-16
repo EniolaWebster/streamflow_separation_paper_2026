@@ -2,9 +2,9 @@
 """
 Score PyBFS baseflow separation against the modified strict baseflow reference
 (Xie et al., 2020, as modified in Section 2.4 of the paper) for all sites, and
-report NRMSE (Eq. 50) for the 2018 validation year.
+report NRMSE (Eq. 24) for the 2018 evaluation year.
 
-This reproduces the labeled-baseflow comparison behind Figures 12-14 and the
+This reproduces the labeled-baseflow comparison behind Figures 11-13 and the
 NRMSE values reported in Section 3.1, using pybfs.modified_strict_baseflow()
 and pybfs.separation_skill() (pybfs/skill.py).
 """
@@ -27,14 +27,14 @@ from main_baseflow_2018_all_sites import pick_site_col
 def main():
     parser = argparse.ArgumentParser(
         description="Compute NRMSE between PyBFS baseflow and the modified strict "
-                     "baseflow reference for all sites, for the 2018 validation year."
+                     "baseflow reference for all sites, for the 2018 evaluation year."
     )
     parser.add_argument("--params", default=str(DATA_DIR / "bfs_params_python_all_sites.csv"))
     parser.add_argument("--streamflow", default=str(DATA_DIR / "streamflow_with_date.csv"))
     parser.add_argument("--outdir", default=str(OUT_DIR))
     parser.add_argument("--outfile", default="nrmse_summary_all_sites.csv")
-    parser.add_argument("--start", default="2018-01-01", help="Start of validation window (inclusive)")
-    parser.add_argument("--end", default="2018-12-31", help="End of validation window (inclusive)")
+    parser.add_argument("--start", default="2018-01-01", help="Start of evaluation window (inclusive)")
+    parser.add_argument("--end", default="2018-12-31", help="End of evaluation window (inclusive)")
     parser.add_argument("--date_col", default="Date")
     parser.add_argument("--quantile", type=float, default=0.8,
                          help="Quantile used by modified_strict_baseflow (default 0.8, per paper)")
@@ -58,7 +58,7 @@ def main():
     start = pd.to_datetime(args.start)
     end = pd.to_datetime(args.end)
 
-    # Restrict to the validation window *before* running PyBFS, matching
+    # Restrict to the evaluation window *before* running PyBFS, matching
     # main_baseflow_2018_all_sites.py. Running on the full multi-year record
     # instead changes the model's internal storage state (no cold start at
     # the window's beginning) and gives different, less accurate results.
