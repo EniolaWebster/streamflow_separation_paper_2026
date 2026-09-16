@@ -1,6 +1,6 @@
 # Streamflow Separation Paper — Data and Code
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22780129.svg)](https://doi.org/10.5281/zenodo.22780129)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22780128.svg)](https://doi.org/10.5281/zenodo.22780128)
 
 Input data, model parameters, analysis scripts, result tables and figures to
 reproduce the streamflow separation results reported in:
@@ -28,8 +28,12 @@ This repository is archived on Zenodo. To cite the data and code:
 > Heijden, R., Li, X., Williams, G. P., Jones, N. L., Rizzo, D. M., & Clement,
 > T. P. (2026). *Data and analysis code for "Development and Testing of a
 > Process-Based Streamflow Separation Model for Baseflow Simulation and
-> Short-Term Low-Flow Forecasts"* (Version 1.0.0) [Data set]. Zenodo.
-> https://doi.org/10.5281/zenodo.22780129
+> Short-Term Low-Flow Forecasts"* [Data set]. Zenodo.
+> https://doi.org/10.5281/zenodo.22780128
+
+The DOI above always resolves to the most recent version. To cite a specific
+one, use its own DOI: 10.5281/zenodo.22797807 for v1.1.0 (current) or
+10.5281/zenodo.22780129 for v1.0.0.
 
 ## Quick start
 
