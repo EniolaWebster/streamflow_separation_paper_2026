@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Step 1: run PyBFS baseflow separation for all sites over the 2018 validation
+Step 1: run PyBFS baseflow separation for all sites over the 2018 evaluation
 year and write the simulated baseflow as a wide CSV (Date + one column per
 site).
 
-This reproduces the model output shown as the green line/points in Figure 12.
+This reproduces the model output shown as the green line/points in Figure 11.
 """
 import os
 import argparse
